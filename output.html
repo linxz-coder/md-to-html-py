@@ -1,0 +1,18 @@
+<h1>如何创建python虚拟环境venv，解决依赖冲突问题</h1>
+<p>我们一般会去调试各种路径，<code>which python</code>和<code>pip</code>，以及<code>python3</code>和<code>pip3</code>，但是这些都不是问题的根源。问题的根源是<strong>依赖冲突</strong>。</p>
+<p>解决方案如下：</p>
+<pre class="codehilite"><code class="language-python"># 创建一个虚拟环境
+python3 -m venv venv
+
+# 激活虚拟环境
+source venv/bin/activate
+
+# 在虚拟环境中安装markdown
+pip install markdown
+
+# 运行脚本
+python md-html.py
+</code></pre>
+
+<p><br></p>
+<p>按照以上方法，可以解决大部分<strong>依赖冲突</strong>问题。</p>
